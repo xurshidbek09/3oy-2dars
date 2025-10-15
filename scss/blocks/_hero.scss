@@ -1,0 +1,83 @@
+.hero-section{
+    background-image: url("../../img/hero-bg2.png");
+    background-repeat: no-repeat;
+    background-position: calc(50% - 720px) 0;
+}
+.hero-wrapper {
+    @include Display($items: start, $justify: space-between, $gap: 0px);
+    background-image: url("../../img/hero-bg1.png");
+    background-repeat: no-repeat;
+    
+       background-size: 358px 100px;
+    background-position: right bottom;
+    padding-bottom: 250px;
+}
+.hero-title {
+    @include TextStyle($FW: 700, $FS: 100px, $LH: 100px, $LS: 0px, $CLR: $clr-white);
+    width: 600px;
+}
+.hero-title span{
+    @include TextStyle($FW: 700, $FS: 100px, $LH: 100px, $LS: 0px, $CLR: #F67E7E);
+}
+.hero-span {
+    display: inline-block;
+    width: 50px;
+    height: 4px;
+    background-color: #79C8C7;
+}
+.hero-item {
+    @include TextStyle($FW: 600, $FS: 18px, $LH: 28px, $LS: 0px, $CLR: $clr-white);
+    width: 445px;
+    height: 112px;
+    margin-top: 70px;
+}
+
+
+
+@media(max-width:1024px){
+ .hero-title{
+    @include TextStyle($FW: 700, $FS: 64px, $LH: 56px, $LS: 0px, $CLR: $clr-white);
+    text-align: center;
+    align-items: center;
+    margin-bottom: 24px;
+    max-width: 397px;
+ }
+ .hero-title span{
+    @include TextStyle($FW: 700, $FS: 64px, $LH: 56px, $LS: 0px, $CLR: #F67E7E);
+}
+ .hero-span{
+    display: none;
+ }
+ .hero-item {
+    @include TextStyle($FW: 600, $FS: 15px, $LH: 28px, $LS: 0px, $CLR: $clr-white);
+    width: 545px;
+    height: 84px;
+    margin-top: 24px;
+}
+ .hero-wrapper{
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+ }
+ .hero-wrapper {
+    background-position: bottom center;
+ }
+}
+@media(max-width:768px){
+          .hero-title{
+    @include TextStyle($FW: 700, $FS: 40px, $LH: 40px, $LS: 0px, $CLR: $clr-white);
+    text-align: center;
+    align-items: center;
+    margin-bottom: 24px;
+    max-width: 248px;
+ }
+ .hero-title span{
+    @include TextStyle($FW: 700, $FS: 40px, $LH: 40px, $LS: 0px, $CLR: #F67E7E);
+}
+ .hero-item {
+    @include TextStyle($FW: 600, $FS: 15px, $LH: 28px, $LS: 0px, $CLR: $clr-white);
+    width: 327px;
+    height: 84px;
+    margin-top: 18px;
+}
+}

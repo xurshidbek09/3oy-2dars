@@ -1,0 +1,109 @@
+.build-section {
+background-color: #012F34;
+background-image: url("../../img/build-bg.png");
+background-repeat: no-repeat;
+background-position: right bottom ;
+}
+.build-wrapper{
+    @include Display($items: start, $justify: space-between, $gap: 0px);
+    padding: 140px 0px;
+}
+.build-left span{
+display: inline-block;
+width: 50px;
+height: 4px;
+background-color: $clr-red;
+}
+.build-list{
+    margin-top: 85px;
+}
+.build-title {
+    @include TextStyle($FW: 700, $FS: 48px, $LH: 48px, $LS: 0px, $CLR: $clr-white);
+    width: 445px;
+    margin-top: 54px;
+}
+.build-right {
+    display: inline-block;
+    position: relative;
+}
+.build-item {
+    margin-bottom: 32px;
+}
+.build-item:first-child::before{
+    content: "";
+    background-image: url("../../img/build1.svg");
+    background-repeat: no-repeat;
+    display: inline-block;  
+    width: 72px;
+    height: 72px;
+    position: absolute;
+    left: calc(50% - 315px);
+}
+.build-item:nth-child(2):before{
+    content: "";
+    background-image: url("../../img/build2.svg");
+    background-repeat: no-repeat;
+    display: inline-block;  
+    width: 72px;
+    height: 72px;
+    position: absolute;
+    left: calc(50% - 315px);
+}
+.build-item:last-child::before{
+    content: "";
+    background-image: url("../../img/build3.svg");
+    background-repeat: no-repeat;
+    display: inline-block;  
+    width: 72px;
+    height: 72px;
+    position: absolute;
+    left: calc(50% - 315px);
+}
+.build-list-h3 {
+    @include TextStyle($FW: 700, $FS: 18px, $LH: 28px, $LS: 0px, $CLR: $clr-red);
+    margin-bottom: 10px;
+}
+.build-list-p {
+    @include TextStyle($FW: 600, $FS: 15px, $LH: 25px, $LS: 0px, $CLR: $clr-white);
+    width: 445px;
+}
+
+
+
+
+@media(max-width:1024px){
+    .build-section{
+        background-position: right top;
+    }
+    .build-title{
+    @include TextStyle($FW: 700, $FS: 32px, $LH: 32px, $LS: 0px, $CLR: $clr-white);
+    margin-top: 32px;
+
+    }
+.build-wrapper{
+    align-items: center;
+    flex-direction: column;
+}
+.build-list{
+    padding-left: 160px;
+}
+.build-item:first-child::before{
+    left: calc(50% - 230px);
+
+}
+.build-item:nth-child(2)::before{
+    left: calc(50% - 230px);
+
+}
+.build-item:last-child::before{
+    left: calc(50% - 230px);
+
+}
+
+}
+
+
+@media(max-width:768px){
+ 
+  
+}
