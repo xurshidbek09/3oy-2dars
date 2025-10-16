@@ -1,0 +1,60 @@
+.story-section {
+    padding: 140px 0;
+    background-image: url("../../img/story-bg1.svg"), url("../../img/story-bg2.svg");
+    background-repeat: no-repeat;
+    background-size: 147px 100px, 200px 100px;
+    background-position: left top, right bottom;
+}
+.story-wrapper{
+    @include Display($items: center, $justify: start, $gap: 0px);
+    flex-direction: column;
+}
+.story-title {
+    @include TextStyle($FW: 700, $FS: 48px, $LH: 48px, $LS: 0px, $CLR: $clr-white);
+    max-width: 932px;
+    text-align: center;
+    margin-bottom: 56px;
+}
+.story-title span{
+    color: #79C8C7;
+}
+.story-list {
+    @include Display($items: center, $justify: start, $gap: 30px);
+}
+.story-item {
+    @include Display($items: center, $justify: start, $gap: 0px);
+    flex-direction: column;
+    text-align: center;
+    background-image: url("../../img/“.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    padding-top: 36px;
+}
+.story-item p{
+    @include TextStyle($FW: 600, $FS: 15px, $LH: 25px, $LS: 0px, $CLR: $clr-white);
+    max-width: 350px;
+    margin-bottom: 24px;
+}
+.story-item strong{
+    @include TextStyle($FW: 700, $FS: 18px, $LH: 28px, $LS: 0px, $CLR: #79C8C7);  
+    margin-bottom: 2px;
+}
+.story-item i{
+    @include TextStyle($FW: 600, $FS: 13px, $LH: 18px, $LS: 0px, $CLR: $clr-white);   
+    margin-bottom: 32px;
+}
+@media (max-width:777px){
+    .story-title{
+    @include TextStyle($FW: 700, $FS: 32px, $LH: 32px, $LS: 0px, $CLR: $clr-white);
+    margin-bottom: 48px;
+    }
+    .story-list{
+    @include Display($items: center, $justify: start, $gap: 48px);
+        flex-direction: column;
+    }
+    .story-item p{
+    @include TextStyle($FW: 600, $FS: 15px, $LH: 25px, $LS: 0px, $CLR: $clr-white);
+    max-width: 350px;
+    margin-bottom: 16px;
+}
+}

@@ -50,7 +50,7 @@
  }
  .hero-item {
     @include TextStyle($FW: 600, $FS: 15px, $LH: 28px, $LS: 0px, $CLR: $clr-white);
-    width: 545px;
+    max-width: 545px;
     height: 84px;
     margin-top: 24px;
 }
@@ -76,7 +76,7 @@
 }
  .hero-item {
     @include TextStyle($FW: 600, $FS: 15px, $LH: 28px, $LS: 0px, $CLR: $clr-white);
-    width: 327px;
+    max-width: 327px;
     height: 84px;
     margin-top: 18px;
 }

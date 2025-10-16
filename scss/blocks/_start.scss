@@ -1,0 +1,35 @@
+.start-section {
+    background-color: #F67E7E;
+    background-image: url("../img/start-bg.png");
+    background-repeat: no-repeat;
+    background-size: 200px 122px;
+    background-position: bottom left;
+}
+.start-wrapper{
+    @include Display($items: center, $justify: space-between, $gap: 30px);
+    padding: 76px 0;
+}
+.start-title {
+    @include TextStyle($FW: 700, $FS: 48px, $LH: 48px, $LS: 0px, $CLR: #012F34);
+    padding-left: 0px;
+}
+.start-btn {
+       @include BtnStyle($BC: #012F34, $P: 10px 32px);
+}
+
+@media(max-width:1200px){
+    .start-title{
+        @include TextStyle($FW: 700, $FS: 32px, $LH: 32px, $LS: 0px, $CLR: #012F34);
+        padding-left: 40px;
+    }
+}
+@media(max-width:645px){
+    .start-title{
+        padding-left: 0;
+    }
+    .start-wrapper{
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
