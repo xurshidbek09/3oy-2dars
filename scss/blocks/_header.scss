@@ -20,6 +20,11 @@
 
 .header__link {
     @include TextStyle($FW: 600, $FS: 18px, $LH: 28px, $LS: 0px, $CLR: $clr-white);
+    &:hover{
+        color: #F67E7E;
+        scale: 1.07;
+        transition: all 0.3s;
+    }
 }
 
 .header__btn {
@@ -27,6 +32,7 @@
     &:hover{
         color:$clr-green;
         background-color: white; 
+        cursor: pointer;
     }
 }
 

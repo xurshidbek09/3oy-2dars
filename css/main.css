@@ -72,6 +72,11 @@ button {
   letter-spacing: 0px;
   color: white;
 }
+.header__link:hover {
+  color: #F67E7E;
+  scale: 1.07;
+  transition: all 0.3s;
+}
 
 .header__btn {
   font-weight: 600;
@@ -88,6 +93,7 @@ button {
 .header__btn:hover {
   color: #014E56;
   background-color: white;
+  cursor: pointer;
 }
 
 .header__menu-icon {
@@ -504,6 +510,12 @@ button {
   background-color: transparent;
   transition: all 0.3s;
 }
+.start-btn:hover {
+  background-color: #012F34;
+  color: #F67E7E;
+  transition: all 0.3s;
+  cursor: pointer;
+}
 
 @media (max-width: 1200px) {
   .start-title {
@@ -522,5 +534,203 @@ button {
   .start-wrapper {
     flex-direction: column;
     text-align: center;
+  }
+}
+.site-footer {
+  background-color: #002529;
+  padding: 48px 0;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0px;
+}
+
+.footer__left-part-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 125px;
+}
+
+.footer__left-menyu > a > img {
+  margin-bottom: 25px;
+}
+
+.footer__left-list {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 40px;
+}
+
+.footer__left-link {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0px;
+  color: white;
+  transition: all 0.3s;
+}
+.footer__left-link:hover {
+  color: #F67E7E;
+}
+.footer__left-link:active {
+  opacity: 0.3;
+}
+
+.footer__address-text {
+  width: 143px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 0px;
+  color: white;
+}
+
+.footer__address-phone {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 0px;
+  color: white;
+  transition: all 0.3s;
+}
+.footer__address-phone:hover {
+  color: #F67E7E;
+}
+.footer__address-phone:active {
+  opacity: 0.3;
+}
+
+.footer__right-link {
+  text-align: right;
+}
+
+.footer__link > a {
+  color: white;
+  margin-left: 16px;
+  transition: all 0.3s;
+}
+.footer__link > a:hover {
+  color: #F67E7E;
+}
+
+.footer__right-address-link {
+  margin-top: 51px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 0px;
+  color: white;
+}
+
+@media (max-width: 934px) {
+  .site-footer {
+    padding: 56px 0;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  .footer__left-menyu > a > img {
+    margin-bottom: 53px;
+    width: 96px;
+    height: 24px;
+  }
+  .footer__left-link {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 0px;
+    color: white;
+  }
+  .footer__address-text {
+    width: 160px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 0px;
+    color: white;
+    text-align: right;
+  }
+  .footer__left-part-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 289px;
+  }
+  .footer__right-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 200px;
+    margin-top: 32px;
+  }
+  .footer__link {
+    margin-top: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 16px;
+    margin-left: 0px;
+  }
+}
+@media (max-width: 662px) {
+  .site-footer {
+    padding: 66px 0;
+  }
+  .footer__left-menyu > a > img {
+    margin-bottom: 24px;
+    width: 96px;
+    height: 24px;
+  }
+  .footer__left-menyu {
+    margin-bottom: 24px;
+  }
+  .footer__left-link {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 0px;
+    color: white;
+    margin-bottom: 24px;
+  }
+  .footer__address-text {
+    width: 138px;
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 0px;
+    color: white;
+    text-align: center;
+  }
+  .footer__center-part-address {
+    margin-bottom: 40px;
+  }
+  .footer__left-part-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer__right-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0px;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 0px;
+  }
+  .footer__link {
+    margin-top: 0px;
+  }
+  .footer__right-address-link {
+    margin-top: 16px;
   }
 }/*# sourceMappingURL=main.css.map */

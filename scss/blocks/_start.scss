@@ -15,8 +15,13 @@
 }
 .start-btn {
        @include BtnStyle($BC: #012F34, $P: 10px 32px);
+       &:hover{
+        background-color: #012F34;
+        color: #F67E7E;
+        transition: all 0.3s;
+        cursor: pointer;
+       }
 }
-
 @media(max-width:1200px){
     .start-title{
         @include TextStyle($FW: 700, $FS: 32px, $LH: 32px, $LS: 0px, $CLR: #012F34);
